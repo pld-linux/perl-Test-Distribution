@@ -10,7 +10,7 @@ Summary:	Test::Distribution - perform tests on all modules of a distribution
 Summary(pl):	Test::Distribution - wykonywanie testów na wszystkich modu³ach z dystrybucji
 Name:		perl-Test-Distribution
 Version:	1.26
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -21,6 +21,7 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
 BuildRequires:	perl-File-Find-Rule
+BuildRequires:	perl-Pod-Coverage >= 0.17
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
