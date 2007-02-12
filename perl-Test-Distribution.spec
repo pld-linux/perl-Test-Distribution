@@ -7,7 +7,7 @@
 %define		pdir	Test
 %define		pnam	Distribution
 Summary:	Test::Distribution - perform tests on all modules of a distribution
-Summary(pl):	Test::Distribution - wykonywanie testÛw na wszystkich modu≥ach z dystrybucji
+Summary(pl.UTF-8):   Test::Distribution - wykonywanie test√≥w na wszystkich modu≈Çach z dystrybucji
 Name:		perl-Test-Distribution
 Version:	1.26
 Release:	1
@@ -37,15 +37,15 @@ It checks that your distribution isn't missing certain 'core'
 description files. It checks to see you haven't missed out listing any
 pre-requisites in Makefile.PL.
 
-%description -l pl
-W przypadku uøycia tego modu≥u w skrypcie testowym, przechodzi on po
-wszystkich modu≥ach w dystrybucji, sprawdzaj±c ich POD, czy siÍ
-poprawnie kompiluj± oraz czy wszystkie definiuj± $VERSION.
+%description -l pl.UTF-8
+W przypadku u≈ºycia tego modu≈Çu w skrypcie testowym, przechodzi on po
+wszystkich modu≈Çach w dystrybucji, sprawdzajƒÖc ich POD, czy siƒô
+poprawnie kompilujƒÖ oraz czy wszystkie definiujƒÖ $VERSION.
 
-Ten modu≥ wykonuje takøe testy na samej dystrybucji. Sprawdza, czy
-pliki zgadzaj± siÍ z plikiem SIGNATURE, je∂li takowy istnieje.
-Sprawdza, czy w dystrybucji nie brakuje jakich∂ g≥Ûwnych plikÛw z
-opisem. Sprawdza, czy nie zapomniano wymieniÊ wszystkich zaleøno∂ci w
+Ten modu≈Ç wykonuje tak≈ºe testy na samej dystrybucji. Sprawdza, czy
+pliki zgadzajƒÖ siƒô z plikiem SIGNATURE, je≈õli takowy istnieje.
+Sprawdza, czy w dystrybucji nie brakuje jakich≈õ g≈Ç√≥wnych plik√≥w z
+opisem. Sprawdza, czy nie zapomniano wymieniƒá wszystkich zale≈ºno≈õci w
 Makefile.PL.
 
 %prep
