@@ -7,7 +7,7 @@
 %define		pdir	Test
 %define		pnam	Distribution
 Summary:	Test::Distribution - perform tests on all modules of a distribution
-Summary(pl.UTF-8):   Test::Distribution - wykonywanie testów na wszystkich modułach z dystrybucji
+Summary(pl.UTF-8):	Test::Distribution - wykonywanie testów na wszystkich modułach z dystrybucji
 Name:		perl-Test-Distribution
 Version:	1.26
 Release:	1
