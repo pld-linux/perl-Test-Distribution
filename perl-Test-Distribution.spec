@@ -21,8 +21,11 @@ BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
+BuildRequires:	perl-Module-CoreList >= 1.93
+BuildRequires:	perl-Module-Signature
 BuildRequires:	perl-File-Find-Rule
 BuildRequires:	perl-Pod-Coverage >= 0.17
+BuildRequires:	perl-Test-Pod-Coverage
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
