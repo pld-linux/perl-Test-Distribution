@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
-%bcond_without	tests		# do not perform "make test"
+%bcond_with	tests		# perform "make test" (requires network access)
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Test
@@ -21,6 +21,7 @@ BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
+BuildRequires:	gnupg-plugin-keys_hkp
 BuildRequires:	perl-Module-CoreList >= 1.93
 BuildRequires:	perl-Module-Signature
 BuildRequires:	perl-File-Find-Rule
