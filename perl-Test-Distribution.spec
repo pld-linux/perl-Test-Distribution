@@ -17,11 +17,11 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	64dc13f51f60f6022bb8e628f1297957
 URL:		http://search.cpan.org/dist/Test-Distribution/
+%{?with_tests:BuildRequires:	gnupg-plugin-keys_hkp}
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
-BuildRequires:	gnupg-plugin-keys_hkp
 BuildRequires:	perl-File-Find-Rule
 BuildRequires:	perl-Module-CoreList >= 1.93
 BuildRequires:	perl-Module-Signature
