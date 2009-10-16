@@ -9,13 +9,13 @@
 Summary:	Test::Distribution - perform tests on all modules of a distribution
 Summary(pl.UTF-8):	Test::Distribution - wykonywanie testów na wszystkich modułach z dystrybucji
 Name:		perl-Test-Distribution
-Version:	1.26
-Release:	2
+Version:	2.00
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	64dc13f51f60f6022bb8e628f1297957
+# Source0-md5:	7b7f905605f60a786f2ece2d76230fd1
 URL:		http://search.cpan.org/dist/Test-Distribution/
 %{?with_tests:BuildRequires:	gnupg-plugin-keys_hkp}
 BuildRequires:	perl-Module-Build
@@ -75,6 +75,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc README
 %{perl_vendorlib}/Test/Distribution.pm
 %{_mandir}/man3/*
