@@ -3,7 +3,6 @@
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_with	tests		# perform "make test" (requires network access)
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Test
 %define		pnam	Distribution
 Summary:	Test::Distribution - perform tests on all modules of a distribution
